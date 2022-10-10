@@ -11,5 +11,6 @@ public class Shape {
     }
     public double getArea() { // класс вычисляет площадь
         return Double.NaN;
+
     }
 }

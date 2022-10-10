@@ -10,11 +10,9 @@ public class Main {
                 new Point(0,1), Color.RED);
         Square square = new Square(
                 new Point(5,5),2,Color.BLUE);
-        Shape shape = triangle;
-        Object object = triangle;
-        triangle = (Triangle) object;
+        Rectangle rectangle = new Rectangle(25,10,Color.BLACK);
 
-        Shape[] shapes = {circle, triangle, square};
+        Shape[] shapes = {circle, triangle, square, rectangle};
         printArrayElements(shapes);
 
         Shape maxShape = findShapeWithMaxArea(shapes);
