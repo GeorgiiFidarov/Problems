@@ -13,7 +13,7 @@ import java.util.Scanner;
  --------------------------------------------------------------------
  * Sample Input 129700/Sample Output 12:01:40
  */
-public class Main {
+public class Solution1 {
     public static void main(String[] args) {
         Scanner input  = new Scanner(System.in);
         int givenSeconds = input.nextInt();
