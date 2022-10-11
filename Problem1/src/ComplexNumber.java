@@ -15,7 +15,16 @@ import java.util.Objects;
  * // a.hashCode() must be equal to b.hashCode()
  */
 public final class ComplexNumber {
+
+
+
     public static void main(String[] args) {
+        Cheking Bmw = new Cheking("Almera",50000,1968);
+        Cheking Nissan = new Cheking("Almera",50000,1968);
+        System.out.println(Bmw.equals(Nissan)+" Bmw equals Nissan "+"\n"+
+                "{HashCode "+Bmw.hashCode()+"=BMW }"+
+                "{HashCode "+Nissan.hashCode()+"=NISSAN }");
+
         ComplexNumber a = new ComplexNumber(1, 1);
         ComplexNumber b = new ComplexNumber(1, 1);
         System.out.println(a.equals(b));//must be true
