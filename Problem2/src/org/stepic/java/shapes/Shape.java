@@ -1,6 +1,6 @@
 package org.stepic.java.shapes;
 
-public class Shape {
+public abstract class Shape {
     private final Color color; //класс определяющий цвет
 
     public Shape (Color color) {
@@ -9,8 +9,5 @@ public class Shape {
     public Color getColor() {
         return color;
     }
-    public double getArea() { // класс вычисляет площадь
-        return Double.NaN;
-
-    }
+    public abstract double getArea(); // класс вычисляет площадь
 }
