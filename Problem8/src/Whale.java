@@ -1,9 +1,6 @@
-class Whale extends Cow {
-    public Whale(int cowAge) {
-        super(cowAge);
-    }
+class Whale extends Shape {
     @Override
-    public String printName() {
-        return "I am not Cow, I am Whale";
+    public String getName() {
+        return "I'm Whale";
     }
 }
