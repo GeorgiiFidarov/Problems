@@ -1,3 +1,5 @@
+package org.stepik;
+
 import java.util.Scanner;
 
 /**
@@ -28,8 +30,6 @@ public class Main {
         while ((h - b) > 0) {//в цикле пока
             counter++;//cчетчик
             h = h - a + b;//из столба вычитаем прополз + скатился
-
-
         }
         System.out.println(counter);
     }
