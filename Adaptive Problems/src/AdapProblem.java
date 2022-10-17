@@ -11,7 +11,6 @@ public class AdapProblem {
      ------------------------------------------------------------
      * Note: the output text should exactly match the sample!
      * Including letters case and location of spaces.
-     *
      */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -42,9 +41,7 @@ public class AdapProblem {
     }
     //еще вот так можно сделать через луп и hasNextInt
     public void number(String[] args) {
-
             Scanner scanner = new Scanner(System.in);
-
             while(scanner.hasNextInt()) {//this implementation
                 switch (scanner.nextInt()) {
                     case 0:
