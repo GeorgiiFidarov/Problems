@@ -20,6 +20,7 @@ public class Main {
         double n = 10000000;
         double h = Math.abs(b - a) / n;
         double result = 0;
+
         //f = (s) -> Math.sin(s);//lambda
 
         for(int i = 0; i < n; i++) {

@@ -2,6 +2,8 @@ import java.time.Duration;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
+import java.util.TreeSet;
+
 /**
  * Digital watches display time in the h:mm:ss
  * format (from 0:00:00 to 23:59:59), i.e. first goes the number of hours,
@@ -22,6 +24,6 @@ public class Solution1 {
         LocalTime z = a.plus(Duration.ofSeconds(givenSeconds));//now
         DateTimeFormatter formatter  = DateTimeFormatter.ofPattern("H:mm:ss");
         String text = z.format(formatter);
-        System.out.print(text);;
+        System.out.print(text);
     }
 }
