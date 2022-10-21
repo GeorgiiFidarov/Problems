@@ -1,7 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
+
 }
 class Bugatti {
     private String color = "BLACK";
@@ -18,3 +16,20 @@ class Bugatti {
         return body;
     }
 }
+class Programmer{
+    private int salary = 1000;
+    public int getSalary() {
+        return salary;
+    }
+    public void setSalary(int salary) {
+        if (this.salary<salary)
+            this.salary = salary;
+    }
+
+    public static void main(String[] args) {
+        Programmer programmer = new Programmer();
+        programmer.setSalary(10);
+        System.out.println(programmer.salary);
+    }
+}
+
