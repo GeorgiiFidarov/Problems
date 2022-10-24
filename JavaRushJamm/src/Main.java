@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Objects;
 
 public class Main {
@@ -54,12 +55,14 @@ class iphone{
     }
 }
 class Memory {
-
+    /*
     public static void main(String[] args) {
         String[] memory = {"object15", null, null, "object2", null, null, null, "object32", null, "object4"};
         executeDefragmentation(memory);
         System.out.println(Arrays.toString(memory));
     }
+
+     */
 
     public static void executeDefragmentation(String[] array) {
         int length = array.length;//
@@ -73,6 +76,161 @@ class Memory {
         Arrays.fill(array, counter, array.length, null);
     }
 }
+class Market {
+    private static boolean hasEggs = true;
+    /*
+    public static void main(String[] args) {
+        boolean hasEggs = true;
+        makePurchases(hasEggs);
+    }
+
+     */
+
+    public static void makePurchases(boolean hasEggs) {
+        if (!hasEggs) {
+            System.out.println("Купил 10 батонов");
+        } else
+            System.out.println("Купил 1 батон");
+        }
+}
+class Hedgehog {
+
+    public void eat(Apple apple) {
+        System.out.println("Яблоко было съедено!");
+    }
+    /*
+    public static void main(String[] args) {
+        Apple apple = new Apple();
+        Hedgehog hedgehog = new Hedgehog();
+        hedgehog.eat(apple);
+    }
+     */
+
+    public static class Apple {
+    }
+}
+class Solution {
+    public static void showWeather(City city) {
+        System.out.println("В городе "+city.getName()
+                +" сегодня температура воздуха "
+                +city.getTemperature());
+    }
+    /*
+    public static void main(String[] args) {
+        showWeather(new City("Дубай",40));
+    }
+     */
+}
+class City {
+    private String name;
+    private int temperature;
+    public City(String name, int temperature) {
+        this.name = name;
+        this.temperature = temperature;
+    }
+    public String getName() {
+        return name;
+    }
+    public int getTemperature() {
+        return temperature;
+    }
+}
+class Earth {
+    /*
+    public static void main(String[] args) {
+        Africa africa = new Africa(100);
+        Antarctica antarctica = new Antarctica(200);
+        Australia australia = new Australia(300);
+        Eurasia eurasia = new Eurasia(400);
+        NorthAmerica northAmerica = new NorthAmerica(10);
+        SouthAmerica southAmerica = new SouthAmerica(1000);
+    }
+     */
+}
+class Africa{
+    private final int area;
+    public Africa(int area) {
+        this.area = area;
+    }
+}
+class Antarctica{
+    private final int area;
+    public Antarctica(int area) {
+        this.area = area;
+    }
+}
+class Australia{
+    private final int area;
+    public Australia(int area) {
+        this.area = area;
+    }
+}
+class Eurasia{
+    private final int area;
+    public Eurasia(int area) {
+        this.area = area;
+    }
+}
+class NorthAmerica{
+    private final int area;
+    public NorthAmerica(int area) {
+        this.area = area;
+    }
+}
+class SouthAmerica{
+    private final int area;
+    public SouthAmerica(int area) {
+        this.area = area;
+    }
+}
+class Solution1 {
+
+    private int currentYear;
+
+    public Solution1() {
+        this.currentYear = Calendar.getInstance().get(Calendar.YEAR);
+    }
+
+    public int getCurrentYear() {
+        return currentYear;
+    }
+    /*
+    public static void main(String[] args) {
+        Solution1 solution1 = new Solution1();
+        System.out.println(solution1.getCurrentYear());
+    }
+     */
+}
+class Cat{
+    String name;
+    int age;
+    static int count = 0;//переменная класса
+
+    public static void main(String[] args) {
+        Cat barsik = new Cat();
+        barsik.age = 3;
+        barsik.name ="hui";
+        count++;
+
+        Cat barsik1 = new Cat();
+        barsik.age = 4;
+        barsik.name ="hui1";
+        count++;
+        barsik1.jump();
+        System.out.println(count);
+    }
+    public void sayMeow(){
+        System.out.println("Meu-meu motherfucker!");
+    }
+    public void jump(){
+        System.out.println("Jump jump");
+    }
+}
+
+
+
+
+
 
 
 
