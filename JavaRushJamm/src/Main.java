@@ -204,26 +204,21 @@ class Solution1 {
 class Cat{
     String name;
     int age;
-    static int count = 0;//переменная класса
+    static int count = 0;//переменная класса задаётся в классе static
+
+    public Cat(String name, int age){
+        count++;
+        this.age = age;
+        this.name = name+" "+count +" "+" "+age;
+
+
+    }
 
     public static void main(String[] args) {
-        Cat barsik = new Cat();
-        barsik.age = 3;
-        barsik.name ="hui";
-        count++;
-
-        Cat barsik1 = new Cat();
-        barsik.age = 4;
-        barsik.name ="hui1";
-        count++;
-        barsik1.jump();
-        System.out.println(count);
-    }
-    public void sayMeow(){
-        System.out.println("Meu-meu motherfucker!");
-    }
-    public void jump(){
-        System.out.println("Jump jump");
+        Cat streetCat1 = new Cat("Vasia",4);
+        Cat streetCat2 = new Cat("Igor",3);
+        System.out.println(streetCat1.name);
+        System.out.println(streetCat2.name);
     }
 }
 
