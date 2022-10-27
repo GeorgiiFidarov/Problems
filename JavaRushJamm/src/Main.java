@@ -213,13 +213,15 @@ class Cat{
 
 
     }
-
+    /*
     public static void main(String[] args) {
         Cat streetCat1 = new Cat("Vasia",4);
         Cat streetCat2 = new Cat("Igor",3);
         System.out.println(streetCat1.name);
         System.out.println(streetCat2.name);
     }
+
+     */
 }
 
 
