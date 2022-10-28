@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Streams {
+    /*
     public static void main(String[] args) throws Exception {
         Scanner scan = new Scanner(System.in);
 
@@ -28,6 +29,7 @@ public class Streams {
         Writer writer = new OutputStreamWriter(outputStream, StandardCharsets.UTF_8);
         writer.write("f");
     }
+     */ //hidden main
     //finding most frequent
     public static int leastFrequent(int[] size){
         int maxCount = 0;
@@ -80,5 +82,23 @@ public class Streams {
             size[i] = temp[i];
         }
         return j;
+    }
+
+}
+class InputStreams{
+    public static void main(String[] args) throws IOException {
+        byte [] buff = {48,49,50,51};
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        InputStream inputStream = new ByteArrayInputStream(buff);
+        OutputStream outputStream = new PrintStream(stream);
+
+        byte[] buffer = new byte[1000];//это по факту наш буфер обмена
+        while (inputStream.available()>0){
+            int count = inputStream.read(buffer);
+            outputStream.write(buffer,0,count);
+        }
+        inputStream.close();
+        outputStream.close();
+        System.out.println(stream);
     }
 }
