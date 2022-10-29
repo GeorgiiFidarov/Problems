@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Adaptive Problems/Adaptive Problems.iml" filepath="$PROJECT_DIR$/Adaptive Problems/Adaptive Problems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algoritms/Algoritms.iml" filepath="$PROJECT_DIR$/Algoritms/Algoritms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Generics/Generics.iml" filepath="$PROJECT_DIR$/Generics/Generics.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaRushJamm/JavaRushJamm.iml" filepath="$PROJECT_DIR$/JavaRushJamm/JavaRushJamm.iml" />
       <module fileurl="file://$PROJECT_DIR$/Problem03/Problem03.iml" filepath="$PROJECT_DIR$/Problem03/Problem03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Problem1/Problem1.iml" filepath="$PROJECT_DIR$/Problem1/Problem1.iml" />
