@@ -1,36 +1,26 @@
 package org.stepik;
 
-import java.util.Scanner;
-
-/**
- * Snail creep
- * Snail creeps up the vertical pole of height H feets. Per day it goes A feets up, and per night it goes B feets down. In which day the snail will reach the top of the pole?
- * Input data format
- * On the input the program receives non-negative integers H, A, B, where H > B and A > B. Every integer does not exceed 100.
- * Sample Input 1:
- * 10
- * 3
- * 2
- * Sample Output 1:
- * 8
- * Sample Input 2:
- * 20
- * 7
- * 3
- * Sample Output 2:
- * 5
- */
-public class Main {
+class Main{
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int h = scanner.nextInt();//высота столба
-        int a = scanner.nextInt();//поднимется в день
-        int b = scanner.nextInt();//опускается за ночь
-        int counter = 0;//счетчик
-        while ((h - b) > 0) {//в цикле пока
-            counter++;//cчетчик
-            h = h - a + b;//из столба вычитаем прополз + скатился
-        }
-        System.out.println(counter);
+        WritingMaterials pen = new WritingMaterials();
+        pen.setName("ручка");
+        pen.setColor("Красный");
+        pen.setLength(11.6);
+        pen.setPrice(167);
+        pen.setDraw(true);
+        pen.display();
+        pen.draw();
+        pen.priceDown(10);
+        pen.display();
+        pen.priceUp(23);
+        pen.display();
+        pen.replaceRod("Синий");
+        pen.draw();
+        System.out.println(pen.getName());
+        System.out.println(pen.getColor());
+        System.out.println(pen.getLength());
+        System.out.println(pen.getPrice());
+        System.out.println(pen.isDraw());
     }
+
 }
