@@ -1,12 +1,15 @@
 public class Bird extends Animal{
     {setFly(true);}
+
     private String area;
     private boolean winterFly;
 
-
-
-    public Bird() {
+    Bird() {
+        super();
+        super.type = "Птица";
+        super.isFly = true;
     }
+
 
     public String getArea() {
         return area;
@@ -22,6 +25,14 @@ public class Bird extends Animal{
     }
     public void chirik_chirik(){
         System.out.println("Chirik-Chirik");
+    }
+
+    @Override
+    public void display(){
+        System.out.print("I am Bird. Тип: "+super.type+", Имя: "+super.name);
+        System.out.print(", Зона обитания: " + getArea());
+        System.out.print(", Умеет летать: "+(isFly ? "Да" : "Нет"));
+        System.out.println(", Улетает зимовать: " + (winterFly ? "Да." : "Нет." ));
     }
 
 }

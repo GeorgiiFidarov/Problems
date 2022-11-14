@@ -5,7 +5,12 @@ public class Insect extends Animal{
     private boolean likeJesus;
 
 
-    public Insect(){
+    Insect(){
+        super();
+        super.type = "Насекомое";
+        super.isWalk = true; //Ходить
+        this.wingCount = 0;
+        this.likeJesus = false;
     }
     public int getWingCount() {
         return wingCount;
@@ -18,6 +23,13 @@ public class Insect extends Animal{
     }
     public void setLikeJesus(boolean likeJesus) {
         this.likeJesus = likeJesus;
+    }
+    @Override
+    public void display(){
+        System.out.print("I am Insect. Тип: "+super.type+", Имя: "+super.name);
+        System.out.print(", Количество крыльев: " + wingCount);
+        System.out.print(", Умеет ходить: "+(isWalk ? "Да" : "Нет"));
+        System.out.println(", Умеет ли ходить по воде: " + (likeJesus ? "Да." : "Нет." ));
     }
     public void ggg(){
         System.out.println("Ggggg");
