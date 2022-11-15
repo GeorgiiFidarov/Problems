@@ -1,3 +1,5 @@
+package Zoopark;
+
 class Main{
     public static void main(String[] args) {
         Animal duck = new Animal("Утка", "Утя", 3, 5.8, true, true, true);

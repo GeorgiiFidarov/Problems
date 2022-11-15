@@ -1,3 +1,5 @@
+package Zoopark;
+
 public class Bird extends Animal{
     {setFly(true);}
 
@@ -29,7 +31,7 @@ public class Bird extends Animal{
 
     @Override
     public void display(){
-        System.out.print("I am Bird. Тип: "+super.type+", Имя: "+super.name);
+        System.out.print("I am Zoopark.Bird. Тип: "+super.type+", Имя: "+super.name);
         System.out.print(", Зона обитания: " + getArea());
         System.out.print(", Умеет летать: "+(isFly ? "Да" : "Нет"));
         System.out.println(", Улетает зимовать: " + (winterFly ? "Да." : "Нет." ));

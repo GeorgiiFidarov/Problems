@@ -1,3 +1,5 @@
+package Zoopark;
+
 public class Fish extends Animal{
     {setSwim(true);}
     private String squama ;
@@ -24,7 +26,7 @@ public class Fish extends Animal{
 
     @Override
     public void display(){
-        System.out.print("I am Fish. Тип: "+super.type+", Имя: "+super.name);
+        System.out.print("I am Zoopark.Fish. Тип: "+super.type+", Имя: "+super.name);
         System.out.print(", Тип чешуи: " + squama);
         System.out.print(", Умеет плавать: "+(isSwim ? "Да" : "Нет"));
         System.out.println(", Умеет ли плавать против течения: " + (upStreamSwim ? "Да." : "Нет." ));

@@ -1,3 +1,5 @@
+package Zoopark;
+
 public class Insect extends Animal{
     {setWalk(true);}
 
@@ -26,7 +28,7 @@ public class Insect extends Animal{
     }
     @Override
     public void display(){
-        System.out.print("I am Insect. Тип: "+super.type+", Имя: "+super.name);
+        System.out.print("I am Zoopark.Insect. Тип: "+super.type+", Имя: "+super.name);
         System.out.print(", Количество крыльев: " + wingCount);
         System.out.print(", Умеет ходить: "+(isWalk ? "Да" : "Нет"));
         System.out.println(", Умеет ли ходить по воде: " + (likeJesus ? "Да." : "Нет." ));

@@ -1,3 +1,5 @@
+package Zoopark;
+
 class Animal {
     public Animal() {
         this.type = "NoType";
