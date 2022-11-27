@@ -1,11 +1,21 @@
 package Writing;
 public class WritingMaterials{
-    private String name;
-    private String color;
-    private int price;
-    private double length;
-    private boolean draw;
+    {
+        name = "Имя по умолчанию";
+        color  = "цвет по умолчанию";
+    }
+    String name;
+    String color;
+    int price;
+    double length;
+    boolean draw;
+    public static int getCount() {
+        return count;
+    }
+    static int count;
+    static String description = "Базовый клас родитель";
     public WritingMaterials(String name, String color, int price, double length, boolean draw) {
+        count++;
         this.name = name;
         this.color = color;
         this.price = price;
@@ -13,11 +23,14 @@ public class WritingMaterials{
         this.draw = draw;
     }
     public WritingMaterials(String name, int price) {
+        count++;
         this.name = name;
         this.price = price;
     }
     public WritingMaterials() {
+        count++;
     }
+    public String getDescription() {return description;}
     public String getName() {
         return name;
     }
@@ -92,5 +105,18 @@ public class WritingMaterials{
         }else {
             System.out.println(name+" не может ничего нарисовать.");
         }
+    }
+    public static void info(){
+        System.out.printf(description);
+    }
+    @Override
+    public String toString() {
+        return "WritingMaterials{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", price=" + price +
+                ", length=" + length +
+                ", draw=" + (isDraw()?"Да":"Нет") +
+                ", Номер= "+ count +'}';
     }
 }
