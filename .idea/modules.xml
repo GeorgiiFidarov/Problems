@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Adaptive Problems/Adaptive Problems.iml" filepath="$PROJECT_DIR$/Adaptive Problems/Adaptive Problems.iml" />
       <module fileurl="file://$PROJECT_DIR$/Algoritms/Algoritms.iml" filepath="$PROJECT_DIR$/Algoritms/Algoritms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Collections/Collections.iml" filepath="$PROJECT_DIR$/Collections/Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExeptionsTryCatch/ExeptionsTryCatch.iml" filepath="$PROJECT_DIR$/ExeptionsTryCatch/ExeptionsTryCatch.iml" />
       <module fileurl="file://$PROJECT_DIR$/Generics/Generics.iml" filepath="$PROJECT_DIR$/Generics/Generics.iml" />
       <module fileurl="file://$PROJECT_DIR$/HashMap/HashMap.iml" filepath="$PROJECT_DIR$/HashMap/HashMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaRushJamm/JavaRushJamm.iml" filepath="$PROJECT_DIR$/JavaRushJamm/JavaRushJamm.iml" />
@@ -21,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/Problem8/Problem8.iml" filepath="$PROJECT_DIR$/Problem8/Problem8.iml" />
       <module fileurl="file://$PROJECT_DIR$/Problem9/Problem9.iml" filepath="$PROJECT_DIR$/Problem9/Problem9.iml" />
       <module fileurl="file://$PROJECT_DIR$/Problems.iml" filepath="$PROJECT_DIR$/Problems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReadWriteToFile/ReadWriteToFile.iml" filepath="$PROJECT_DIR$/ReadWriteToFile/ReadWriteToFile.iml" />
       <module fileurl="file://$PROJECT_DIR$/problem12/problem12.iml" filepath="$PROJECT_DIR$/problem12/problem12.iml" />
       <module fileurl="file://$PROJECT_DIR$/problem7/problem7.iml" filepath="$PROJECT_DIR$/problem7/problem7.iml" />
     </modules>
