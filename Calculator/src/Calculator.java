@@ -1,3 +1,6 @@
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.PrintStream;
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.Arrays;
@@ -8,13 +11,12 @@ public class Calculator {
 
         Scanner scan = new Scanner(System.in);
         String formula = scan.nextLine();
-        scan.close();
         String[] calculation = formula.split(" ");
-
+        String pathToFile = "C:\\Users\\Georgii\\Desktop\\Projects\\ReadWriteToFile\\file.txt";
             if (calculation[1].contains("*")) {
-                try {
-                    System.out.println((double)Integer.parseInt(calculation[0]) * Integer.parseInt(calculation[2]));
-                } catch (NumberFormatException e) {
+                try(PrintStream printStream = new PrintStream(pathToFile)) {
+                    printStream.println((double)Integer.parseInt(calculation[0]) * Integer.parseInt(calculation[2]));
+                } catch (NumberFormatException | FileNotFoundException e) {
                     System.out.println(e.getMessage() + " Digits only please");
                 }
             }
