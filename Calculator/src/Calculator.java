@@ -1,17 +1,17 @@
 import java.awt.*;
 import java.io.*;
-import java.math.BigDecimal;
-import java.text.DecimalFormat;
-import java.util.Arrays;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class Calculator {
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws IOException {
         Desktop desktop = Desktop.getDesktop();
-        Scanner scan = new Scanner(System.in);
+        String pathToFolder = "C:\\Users\\Georgii\\Desktop\\Projects\\ReadWriteToFile";
+        Scanner scan = new Scanner(Paths.get(pathToFolder+"\\inputFile.txt"));
+        scan.useDelimiter("\\Z");
         String formula = scan.nextLine();
         String[] calculation = formula.split(" ");
-        String pathToFolder = "C:\\Users\\Georgii\\Desktop\\Projects\\ReadWriteToFile";
         File file = new File(pathToFolder+"\\output.txt");
         File logfile = new File(pathToFolder+"\\logfile.txt");
         try(PrintStream printStream = new PrintStream(file);
