@@ -23,10 +23,10 @@ public class Calculator {
                     printStream.close();
                     desktop.open(file);
                 } catch (NumberFormatException n) {
-                    printLog.print("Please input number!");
+                    printLog.print(formula+" Please input number!");
                     printLog.close();
                 } catch (IOException e) {
-                    printLog.println("IOException");
+                    printLog.println(formula+" IOException");
                     printLog.close();
                 }
             }
@@ -37,13 +37,13 @@ public class Calculator {
                     printStream.close();
                     desktop.open(file);
                 } catch (ArithmeticException e) {
-                    printLog.println("Error! Division by zero");
+                    printLog.println(formula+" Error! Division by zero");
                     printLog.close();
                 } catch (NumberFormatException n) {
-                    printLog.println("Error! Not number");
+                    printLog.println(formula+" Error! Not number");
                     printLog.close();
                 } catch (IOException e){
-                    printLog.println(e.getMessage());
+                    printLog.println(formula+e.getMessage());
                     printLog.close();
                 }
             }
@@ -54,7 +54,7 @@ public class Calculator {
                     printStream.close();
                     desktop.open(file);
                 } catch (NumberFormatException e) {
-                    printLog.println("Error! Not number");
+                    printLog.println(formula+" Error! Not number");
                     printLog.close();
                 } catch (IOException e){
                     printLog.println(e.getMessage());
@@ -67,7 +67,7 @@ public class Calculator {
                     printStream.close();
                     desktop.open(file);
                 } catch (NumberFormatException e) {
-                    printLog.println("Error! Not number");
+                    printLog.println(formula+" Error! Not number");
                     printLog.close();
                 } catch (IOException e){
                     System.out.println(e.getMessage());
@@ -79,14 +79,14 @@ public class Calculator {
                         && !calculation[1].equals("/")
                         && !calculation[1].equals("+")
                         && !calculation[1].equals("-")) {
-                    printLog.println("Parameter please");
+                    printLog.println(formula+" Parameter please");
                 }
             } catch (Exception e) {
-                printLog.println("Parameter please");
+                printLog.println(formula+" Parameter please");
                 printLog.close();
             }
         }catch (FileNotFoundException f){
-            System.out.println("Parameter please");
+            System.out.println(formula+" Parameter please");
         }
     }
 }
